@@ -7,6 +7,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FortuneSummonersAssist.Game
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{C3E93990-1C39-48D8-8FA9-80BFAD9D3530}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GameRes", "GameRes", "{7153D01D-0A5B-416F-B482-F9C1459A624B}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Desktop\Game String.txt = ..\..\..\..\Desktop\Game String.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{0690C5E6-E90C-40B1-8045-38C933B541CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -26,6 +33,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5FD2C769-231F-423A-9630-4295349028CB} = {0690C5E6-E90C-40B1-8045-38C933B541CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {12BABEE5-F4AF-46E5-BA30-F7C4266CD08B}
