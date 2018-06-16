@@ -1,0 +1,12 @@
+xor eax,eax
+push eax
+push eax
+push eax
+push eax
+mov eax,[0x07015E0]
+push eax
+mov ecx,[0x08F344C]
+mov ecx,[ecx+0x2784]
+mov eax,0041A240
+call eax
+

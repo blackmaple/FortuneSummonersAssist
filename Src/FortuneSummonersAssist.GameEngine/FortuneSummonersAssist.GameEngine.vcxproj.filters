@@ -1,22 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="源文件">
+    <Filter Include="GameCore">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="头文件">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="Common">
+      <UniqueIdentifier>{0b39a89f-16a9-49d5-99bc-a4947a6ea5a1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="资源文件">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="GameCore\GameManager">
+      <UniqueIdentifier>{d1031d52-a72d-4150-9e9d-cdf909135c6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameCore\Player">
+      <UniqueIdentifier>{1d7ee061-4abf-4ab1-9b9a-c7a72f25dc2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameCore\Call">
+      <UniqueIdentifier>{e5b09f38-f6a4-43bc-826a-a38633f3bd74}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="CMaple.cpp">
+      <Filter>Common</Filter>
     </ClCompile>
+    <ClCompile Include="CBasePlayer.cpp">
+      <Filter>GameCore\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="CUnknow.cpp">
+      <Filter>GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="CRolePlayer.cpp">
+      <Filter>GameCore\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameEventManager.h">
+      <Filter>GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameManager.cpp">
+      <Filter>GameCore\GameManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CMaple.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="CBasePlayer.h">
+      <Filter>GameCore\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="CUnknow.h">
+      <Filter>GameCore</Filter>
+    </ClInclude>
+    <ClInclude Include="CRolePlayer.h">
+      <Filter>GameCore\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameManager.h">
+      <Filter>GameCore\GameManager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="GameCall.txt">
+      <Filter>GameCore\Call</Filter>
+    </Text>
   </ItemGroup>
 </Project>

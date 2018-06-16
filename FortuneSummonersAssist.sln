@@ -5,7 +5,11 @@ VisualStudioVersion = 15.0.27729.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FortuneSummonersAssist.GameEngine", "Src\FortuneSummonersAssist.GameEngine\FortuneSummonersAssist.GameEngine.vcxproj", "{5FD2C769-231F-423A-9630-4295349028CB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GameRes", "GameRes", "{722288B8-A9FB-4AAA-BEB3-14B40D991E78}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GameRes", "GameRes", "{668CF8DD-68BE-46BD-9743-9F03ADF574B8}"
+	ProjectSection(SolutionItems) = preProject
+		GameRes\Game String.txt = GameRes\Game String.txt
+		Src\FortuneSummonersAssist.GameEngine\GameCall.txt = Src\FortuneSummonersAssist.GameEngine\GameCall.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
