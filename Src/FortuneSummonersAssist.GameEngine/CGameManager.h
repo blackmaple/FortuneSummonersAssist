@@ -1,7 +1,7 @@
 #pragma once
 #include "CMaple.h"
 #include "CRolePlayer.h"
-
+#include "CPlayerProp.h"
 namespace FortuneSummonersAssistGame
 {
 	class CGameManager
@@ -9,16 +9,17 @@ namespace FortuneSummonersAssistGame
 	public:
 		CGameManager();
 		~CGameManager();
-		PRolePlayer GetRplePlayer(int at)const;
-		BOOL SetPlayerProp(int propId, int def0 = 0, int def1 = 0, int def2 = 0, int def3 = 0);
+		PRolePlayer GetRplePlayer(INT32 at)const;
+		BOOL SetPlayerProp(INT32 propId, INT32 def0 = 0, INT32 def1 = 0, INT32 def2 = 0, BOOL notSave = FALSE);
 	protected:
 		UINT32 m_0x0;
 		void* m_0x4;
 		UINT8 m_0X8[0x2004];
 		UINT32 m_0X200C;
-		UINT8 m_0X2010[0x2000];
 
+		CPlayerProp m_PlayerProp[0x200];//m_0x2010;
 		UINT16 m_PropNumber;//m_0x4010;
+
 		UINT16 m_0x4012;
 		//4
 		UINT32 m_CP;//m_0x4014;

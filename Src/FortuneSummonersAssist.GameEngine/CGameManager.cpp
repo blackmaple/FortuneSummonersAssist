@@ -13,15 +13,15 @@ namespace FortuneSummonersAssistGame
 	{
 	}
 
-	PRolePlayer CGameManager::GetRplePlayer(int at) const
+	PRolePlayer CGameManager::GetRplePlayer(INT32 at) const
 	{
 		return this->m_pRolePlayer[at];
 	}
 
-	BOOL CGameManager::SetPlayerProp(int propId, int def0, int def1, int def2, int def3)
+	BOOL CGameManager::SetPlayerProp(INT32 propId, INT32 def0, INT32 def1, INT32 def2, BOOL notSave )
 	{
 		var p = CGameEventManager::GetSetPlayerPropEvent();
-		var ret = p(this, propId, def0, def1, def2, def3);
+		var ret = p(this, propId, def0, def1, def2, notSave);
 		return ret;
 	 
 	}

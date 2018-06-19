@@ -7,8 +7,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CBasePlayer.cpp" />
+    <ClCompile Include="CBasePlayerManager.cpp" />
+    <ClCompile Include="CBasePlayerInfo.cpp" />
+    <ClCompile Include="CBasePlayerProperty.cpp" />
+    <ClCompile Include="CGameProp.cpp" />
     <ClCompile Include="CGameManager.cpp" />
+    <ClCompile Include="CPlayerProp.cpp" />
     <ClCompile Include="CRolePlayer.cpp" />
     <ClCompile Include="CUnknow.cpp" />
     <ClCompile Include="CGameEventManager.h" />
@@ -16,11 +20,16 @@
     <ClCompile Include="CMaple.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CBasePlayer.h" />
+    <ClInclude Include="CBasePlayerManager.h" />
+    <ClInclude Include="CBasePlayerInfo.h" />
+    <ClInclude Include="CBasePlayerProperty.h" />
+    <ClInclude Include="CGameProp.h" />
     <ClInclude Include="CGameManager.h" />
     <ClInclude Include="CMaple.h" />
+    <ClInclude Include="CPlayerProp.h" />
     <ClInclude Include="CRolePlayer.h" />
     <ClInclude Include="CUnknow.h" />
+    <ClInclude Include="EnumGameEventAddress.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="GameCall.txt" />

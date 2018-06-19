@@ -1,15 +1,16 @@
 #pragma once
 #include "CMaple.h"
+#include "CBasePlayerInfo.h"
 namespace FortuneSummonersAssistGame
 {
 
 	class CGameManager;
 	//0x6F77B8
-	class CBasePlayer
+	class CBasePlayerManager
 	{
 	public:
-		CBasePlayer();
-		~CBasePlayer();
+		CBasePlayerManager();
+		~CBasePlayerManager();
 		CGameManager* GetGameManager()const;
 	protected:
 		UINT32 m_0x0;
@@ -33,16 +34,16 @@ namespace FortuneSummonersAssistGame
 		UINT32 m_0x48;
 		UINT32 m_0x4C;
 		UINT32 m_0x50;
-		UINT32 m_HP;//m_0x54;
-		UINT32 m_MaxHP;//m_0x58;
-		UINT32 m_MP;//m_0x5c;
-		UINT32 m_MaxMP;//m_0x60;
-		UINT32 m_ATK;//m_0x64;
-		UINT32 m_DEF;//m_0x68
-		UINT32 m_INT;//m_0x6c
-		UINT32 m_STA;//m_0x70;
-		UINT32 m_AddATK;//m_0x74
-		UINT32 m_AddDEF;//m_0x78;
+		UINT32 m_0x54;
+		UINT32 m_0x58;
+		UINT32 m_0x5c;
+		UINT32 m_0x60;
+		UINT32 m_0x64;
+		UINT32 m_0x68;
+		UINT32 m_0x6c;
+		UINT32 m_0x70;
+		UINT32 m_0x74;
+		UINT32 m_0x78;
 		UINT32 m_0x7C;
 		UINT32 m_0x80;
 		UINT32 m_0x84;
@@ -66,16 +67,17 @@ namespace FortuneSummonersAssistGame
 		UINT32 m_0xCC;
 		UINT32 m_0xD0;
 
-		UINT32 m_IsATK;//m_0xD4;
+		UINT32 m_0xD4;
 
-		UINT32 m_CombatLV;//m_0xD8;
-		UINT32 m_MaxCombatLV; //m_0xDC;
+		UINT32 m_0xD8;
+		UINT32 m_0xDC;
 
-		UINT32 m_OverlordLV;//m_0xE0;
+		UINT32 m_0xE0;
 		UINT32 m_0xE4;
 
-		UINT32 m_EXP;//m_0xE8;
-		UINT32 m_MaxEXP;//m_0xEC;
+		UINT32 m_0xE8;
+		UINT32 m_0xEC;
+
 		UINT32 m_0xF0;
 		UINT32 m_0xF4;
 		UINT32 m_0xF8;
@@ -291,25 +293,25 @@ namespace FortuneSummonersAssistGame
 		UINT32 m_0x440;
 		UINT32 m_0x444;
 
-		UINT16 m_0x448;
-		BOOL m_Status_Die;//m_0x44a;
-		UINT16 m_Status_Left;// m_0x44e;
+		UINT16	m_0x448;
+		BOOL	m_Status_Die;		//m_0x44a;
+		UINT16	m_Status_Left;		// m_0x44e;
 
-		UINT16 m_Status_DeathRay;//m_0x450;
-		UINT16 m_Status_Sleep;//m_0x452;
-		UINT16 m_Status_Poison;//m_0x454;
-		UINT16 m_Status_Weak;//m_0x456;
+		UINT16 m_Status_DeathRay;	//m_0x450;
+		UINT16 m_Status_Sleep;		//m_0x452;
+		UINT16 m_Status_Poison;		//m_0x454;
+		UINT16 m_Status_Weak;		//m_0x456;
 		UINT16 m_0x458;
 		UINT16 m_0x45a;
-		UINT16 m_Buffer_Sleep;//m_0x45C;
-		UINT16 m_Buff_WaterShield;//m_0x45e;
+		UINT16 m_Buffer_Sleep;		//m_0x45C;
+		UINT16 m_Buff_WaterShield;	//m_0x45e;
 
 		UINT16 m_Buffer_SeparatedBody;//m_0x460;
 		UINT16 m_Buffer_强力量;//m_0x462;
 		UINT16 m_Buffer_屏障;//m_0x464;
 		UINT16 m_Buffer_三级跳;//m_0x466;
 
-		UINT16 m_Buffer_炎刃;//m_0x468;
+		UINT16 m_Buffer_炎刃;			//m_0x468;
 		UINT16 m_Buffer_飞刀;// m_0x46a;
 
 		UINT32 m_0x46C;
@@ -682,10 +684,10 @@ namespace FortuneSummonersAssistGame
 		//184
 		UINT32 m_0x9E8;
 
-		CGameManager* m_pGameManager;
-		UINT32 m_PlayerId;
+		CGameManager* m_pGameManager;//m_0x9Ec
+		UINT32 m_PlayerId;//m_0x9f0
 		//val=  0
-		UINT32 m_0x9F4;
+		PBasePlayerInfo	m_pBasePlayerInfo;//m_0x9F4;
 		//12
 		UINT32 m_0x9F8;
 		//val = 255;16
@@ -698,357 +700,13 @@ namespace FortuneSummonersAssistGame
 		UINT32 m_0xA08;
 		UINT32 m_0xA0C;
 
-		//可能是一个class
-		UINT32 m_0xA10;
-		UINT32 m_0xA14;
-		UINT32 m_0xA18;
-		UINT32 m_0xA1C;
-		UINT32 m_0xA20;
-		UINT32 m_0xA24;
-		UINT32 m_0xA28;
-		UINT32 m_0xA2C;
-		UINT32 m_0xA30;
-		UINT32 m_0xA34;
-		UINT32 m_0xA38;
-		UINT32 m_0xA3C;
-		UINT32 m_0xA40;
-		UINT32 m_0xA44;
-		UINT32 m_0xA48;
-		UINT32 m_0xA4C;
-		UINT32 m_0xA50;
-		UINT32 m_0xA54;
-		UINT32 m_0xA58;
-		UINT32 m_0xA5C;
-		UINT32 m_0xA60;
-		//28
-		UINT32 m_0xA64;
-		//32
-		UINT32 m_0xA68;
-		//36
-		UINT32 m_0xA6C;
-		//40
-		UINT32 m_0xA70;
-		//44
-		UINT32 m_0xA74;
-		//48
-		UINT32 m_0xA78;
-		//52
-		UINT32 m_0xA7C;
-		//56
-		UINT32 m_0xA80;
-		UINT32 m_0xA84;
-		UINT32 m_0xA88;
-		UINT32 m_0xA8C;
-		UINT32 m_0xA90;
-		UINT32 m_0xA94;
-		UINT32 m_0xA98;
-		//104
-		UINT32 m_0xA9C;
-		//108
-		UINT32 m_0xAA0;
-		//112
-		UINT32 m_0xAA4;
-		//116
-		UINT32 m_0xAA8;
-		//96
-		UINT32 m_0xAAC;
-		//100
-		UINT32 m_0xAB0;
-		UINT32 m_0xAB4;
-		UINT32 m_0xAB8;
-		UINT32 m_0xABC;
-		UINT32 m_0xAC0;
-		UINT32 m_0xAC4;
-		UINT32 m_0xAC8;
-		UINT32 m_0xACC;
-		UINT32 m_0xAD0;
-		UINT32 m_0xAD4;
-		UINT32 m_0xAD8;
-		UINT32 m_0xADC;
-		UINT32 m_0xAE0;
-		UINT32 m_0xAE4;
-		//64
-		UINT32 m_0xAE8;
-		//88
-		UINT32 m_0xAEC;
-		//60
-		UINT32 m_0xAF0;
-		UINT32 m_0xAF4;
-		//68
-		UINT32 m_0xAF8;
-		//72
-		UINT32 m_0xAFC;
-		UINT32 m_0xB00;
-		UINT32 m_0xB04;
-		UINT32 m_0xB08;
-		UINT32 m_0xB0C;
-		UINT32 m_0xB10;
-		UINT32 m_0xB14;
-		UINT32 m_0xB18;
-		UINT32 m_0xB1C;
-		UINT32 m_0xB20;
-		UINT32 m_0xB24;
-		UINT32 m_0xB28;
-		UINT32 m_0xB2C;
-		UINT32 m_0xB30;
-		UINT32 m_0xB34;
-		UINT32 m_0xB38;
-		UINT32 m_0xB3C;
-		UINT32 m_0xB40;
-		UINT32 m_0xB44;
-
-		//120
-		UINT16 m_0xB48;
-		//122
-		UINT16 m_0xB4a;
-		//124
-		UINT16 m_0xB4C;
-		//126
-		UINT16 m_0xB4e;
-		//92
-		UINT32 m_0xB50;
-		//?
-		UINT32 m_0xB54;
-		UINT32 m_0xB58;
-		UINT32 m_0xB5C;
-		UINT32 m_0xB60;
-		UINT32 m_0xB64;
-		UINT32 m_0xB68;
-		UINT32 m_0xB6C;
-		UINT32 m_0xB70;
-		UINT32 m_0xB74;
-		UINT32 m_0xB78;
-		UINT32 m_0xB7C;
-		UINT32 m_0xB80;
-		UINT32 m_0xB84;
-		UINT32 m_0xB88;
-		UINT32 m_0xB8C;
-		UINT32 m_0xB90;
-		UINT32 m_0xB94;
-		UINT32 m_0xB98;
-		UINT32 m_0xB9C;
-		UINT32 m_0xBA0;
-		UINT32 m_0xBA4;
-		UINT32 m_0xBA8;
-		UINT32 m_0xBAC;
-		UINT32 m_0xBB0;
-		UINT32 m_0xBB4;
-		UINT32 m_0xBB8;
-		UINT32 m_0xBBC;
-		UINT32 m_0xBC0;
-		UINT32 m_0xBC4;
-		UINT32 m_0xBC8;
-		UINT32 m_0xBCC;
-		UINT32 m_0xBD0;
-		UINT32 m_0xBD4;
-		UINT32 m_0xBD8;
-		UINT32 m_0xBDC;
-		UINT32 m_0xBE0;
-		UINT32 m_0xBE4;
-		UINT32 m_0xBE8;
-		UINT32 m_0xBEC;
-		UINT32 m_0xBF0;
-		UINT32 m_0xBF4;
-		UINT32 m_0xBF8;
-		UINT32 m_0xBFC;
-		UINT32 m_0xC00;
-		UINT32 m_0xC04;
-		UINT32 m_0xC08;
-		UINT32 m_0xC0C;
-		UINT32 m_0xC10;
-		UINT32 m_0xC14;
-		UINT32 m_0xC18;
-		UINT32 m_0xC1C;
-		UINT32 m_0xC20;
-		UINT32 m_0xC24;
-		UINT32 m_0xC28;
-		UINT32 m_0xC2C;
-		UINT32 m_0xC30;
-		UINT32 m_0xC34;
-		UINT32 m_0xC38;
-		UINT32 m_0xC3C;
-		UINT32 m_0xC40;
-		UINT32 m_0xC44;
-		UINT32 m_0xC48;
-		UINT32 m_0xC4C;
-		UINT32 m_0xC50;
-		UINT32 m_0xC54;
-		UINT32 m_0xC58;
-		UINT32 m_0xC5C;
-		UINT32 m_0xC60;
-		UINT32 m_0xC64;
-		UINT32 m_0xC68;
-		UINT32 m_0xC6C;
-		UINT32 m_0xC70;
-		UINT32 m_0xC74;
-		UINT32 m_0xC78;
-		UINT32 m_0xC7C;
-		UINT32 m_0xC80;
-		UINT32 m_0xC84;
-		UINT32 m_0xC88;
-		UINT32 m_0xC8C;
-		UINT32 m_0xC90;
-		UINT32 m_0xC94;
-		UINT32 m_0xC98;
-		UINT32 m_0xC9C;
-		UINT32 m_0xCA0;
-		UINT32 m_0xCA4;
-		UINT32 m_0xCA8;
-		UINT32 m_0xCAC;
-		UINT32 m_0xCB0;
-		UINT32 m_0xCB4;
-		UINT32 m_0xCB8;
-		UINT32 m_0xCBC;
-		UINT32 m_0xCC0;
-		UINT32 m_0xCC4;
-		UINT32 m_0xCC8;
-		UINT32 m_0xCCC;
-		UINT32 m_0xCD0;
-		UINT32 m_0xCD4;
-		UINT32 m_0xCD8;
-		UINT32 m_0xCDC;
-		UINT32 m_0xCE0;
-		UINT32 m_0xCE4;
-		UINT32 m_0xCE8;
-		UINT32 m_0xCEC;
-		UINT32 m_0xCF0;
-		UINT32 m_0xCF4;
-		UINT32 m_0xCF8;
-		UINT32 m_0xCFC;
-		UINT32 m_0xD00;
-		UINT32 m_0xD04;
-		UINT32 m_0xD08;
-		UINT32 m_0xD0C;
-		UINT32 m_0xD10;
-		UINT32 m_0xD14;
-		UINT32 m_0xD18;
-		UINT32 m_0xD1C;
-		UINT32 m_0xD20;
-		UINT32 m_0xD24;
-		UINT32 m_0xD28;
-		UINT32 m_0xD2C;
-		UINT32 m_0xD30;
-		UINT32 m_0xD34;
-		UINT32 m_0xD38;
-		UINT32 m_0xD3C;
-		UINT32 m_0xD40;
-		UINT32 m_0xD44;
-		UINT32 m_0xD48;
-		UINT32 m_0xD4C;
-		UINT32 m_0xD50;
-		UINT32 m_0xD54;
-		UINT32 m_0xD58;
-		UINT32 m_0xD5C;
-		UINT32 m_0xD60;
-		UINT32 m_0xD64;
-		UINT32 m_0xD68;
-		UINT32 m_0xD6C;
-		UINT32 m_0xD70;
-		UINT32 m_0xD74;
-		UINT32 m_0xD78;
-		UINT32 m_0xD7C;
-		UINT32 m_0xD80;
-		UINT32 m_0xD84;
-		UINT32 m_0xD88;
-		UINT32 m_0xD8C;
-		UINT32 m_0xD90;
-		UINT32 m_0xD94;
-		UINT32 m_0xD98;
-		UINT32 m_0xD9C;
-		UINT32 m_0xDA0;
-		UINT32 m_0xDA4;
-		UINT32 m_0xDA8;
-		UINT32 m_0xDAC;
-		UINT32 m_0xDB0;
-		UINT32 m_0xDB4;
-		UINT32 m_0xDB8;
-		UINT32 m_0xDBC;
-		UINT32 m_0xDC0;
-		UINT32 m_0xDC4;
-		UINT32 m_0xDC8;
-		UINT32 m_0xDCC;
-		UINT32 m_0xDD0;
-		UINT32 m_0xDD4;
-		UINT32 m_0xDD8;
-		UINT32 m_0xDDC;
-		UINT32 m_0xDE0;
-		UINT32 m_0xDE4;
-		UINT32 m_0xDE8;
-		UINT32 m_0xDEC;
-		UINT32 m_0xDF0;
-		UINT32 m_0xDF4;
-		UINT32 m_0xDF8;
-		UINT32 m_0xDFC;
-		UINT32 m_0xE00;
-		UINT32 m_0xE04;
-		UINT32 m_0xE08;
-		UINT32 m_0xE0C;
-		UINT32 m_0xE10;
-		UINT32 m_0xE14;
-		UINT32 m_0xE18;
-		UINT32 m_0xE1C;
-		UINT32 m_0xE20;
-		UINT32 m_0xE24;
-		UINT32 m_0xE28;
-		UINT32 m_0xE2C;
-		UINT32 m_0xE30;
-		UINT32 m_0xE34;
-		UINT32 m_0xE38;
-		UINT32 m_0xE3C;
-		UINT32 m_0xE40;
-		UINT32 m_0xE44;
-		UINT32 m_0xE48;
-		UINT32 m_0xE4C;
-		UINT32 m_0xE50;
-		UINT32 m_0xE54;
-		UINT32 m_0xE58;
-		UINT32 m_0xE5C;
-		UINT32 m_0xE60;
-		UINT32 m_0xE64;
-		UINT32 m_0xE68;
-		UINT32 m_0xE6C;
-		UINT32 m_0xE70;
-		UINT32 m_0xE74;
-		UINT32 m_0xE78;
-		UINT32 m_0xE7C;
-		UINT32 m_0xE80;
-		UINT32 m_0xE84;
-		UINT32 m_0xE88;
-		UINT32 m_0xE8C;
-		UINT32 m_0xE90;
-		UINT32 m_0xE94;
-		UINT32 m_0xE98;
-		UINT32 m_0xE9C;
-
-		UINT32 m_0xEA0;
-		UINT32 m_0xEA4;
-		UINT32 m_0xEA8;
-		UINT32 m_0xEAC;
-		UINT32 m_0xEB0;
-		UINT32 m_0xEB4;
-		UINT32 m_0xEB8;
-		UINT32 m_0xEBC;
-		UINT32 m_0xEC0;
-		UINT32 m_0xEC4;
-		UINT32 m_0xEC8;
-		UINT32 m_0xECC;
-		UINT32 m_0xED0;
-		UINT32 m_0xED4;
-		UINT32 m_0xED8;
-		UINT32 m_0xEDC;
-		UINT32 m_0xEE0;
-		UINT32 m_0xEE4;
-		//val = 0
-		UINT16 m_0xEE8;
-		//val = 0
-		UINT16 m_0xEEa;
-
+		CBasePlayerProperty m_BasePlayerProperty;//m_0xa10;
 	};
 	enum
 	{
 		//3820;0x0eec
-		EnumBasePlayerSize = sizeof(CBasePlayer)
+		EnumBasePlayerSize = sizeof(CBasePlayerManager)
 	};
-	typedef CBasePlayer* PBasePlayer;
+	typedef CBasePlayerManager* PBasePlayerManager;
 
 }

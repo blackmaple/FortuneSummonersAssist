@@ -1,10 +1,10 @@
 #pragma once
-#include "CBasePlayer.h"
+#include "CBasePlayerManager.h"
 namespace FortuneSummonersAssistGame
 {
 
 	class CRolePlayer :
-		public CBasePlayer
+		public CBasePlayerManager
 	{
 	public:
 		CRolePlayer();

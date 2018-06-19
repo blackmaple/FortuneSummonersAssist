@@ -1,5 +1,6 @@
 #pragma once
 #include "CMaple.h"
+#include "EnumGameEventAddress.h"
 
 namespace FortuneSummonersAssistGame
 {
@@ -7,11 +8,8 @@ namespace FortuneSummonersAssistGame
 	class CGameManager;
 	class CGameEventManager
 	{
-		enum EnumGameEventAddress :INT32
-		{
-			Addr_SetPlayerProp = 0x041A240,
-		};
-		typedef BOOL(__thiscall *pSetPlayerPropEvent)(CGameManager* pGameManager , int propId, int def0, int def1, int def2, int def3);
+
+		typedef BOOL(__thiscall *pSetPlayerPropEvent)(CGameManager* pGameManager , INT32 propId, INT32 def0, INT32 def1, INT32 def2, BOOL notSave);
 	public:
 		static	pSetPlayerPropEvent GetSetPlayerPropEvent()
 		{

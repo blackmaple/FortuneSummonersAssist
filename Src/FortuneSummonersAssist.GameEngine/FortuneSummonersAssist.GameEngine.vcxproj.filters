@@ -17,14 +17,20 @@
     <Filter Include="GameCore\Call">
       <UniqueIdentifier>{e5b09f38-f6a4-43bc-826a-a38633f3bd74}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GameCore\Prop">
+      <UniqueIdentifier>{59442c56-67e0-46d9-b52d-8a57aa14d7cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameCore\GameManager\Event">
+      <UniqueIdentifier>{54f0aeed-9d3c-450e-8c42-83e4be0552fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameCore\Player\Base">
+      <UniqueIdentifier>{c3328833-e030-4fee-8d1e-16a21c8068da}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="CMaple.cpp">
       <Filter>Common</Filter>
-    </ClCompile>
-    <ClCompile Include="CBasePlayer.cpp">
-      <Filter>GameCore\Player</Filter>
     </ClCompile>
     <ClCompile Include="CUnknow.cpp">
       <Filter>GameCore</Filter>
@@ -32,19 +38,31 @@
     <ClCompile Include="CRolePlayer.cpp">
       <Filter>GameCore\Player</Filter>
     </ClCompile>
-    <ClCompile Include="CGameEventManager.h">
-      <Filter>GameCore</Filter>
-    </ClCompile>
     <ClCompile Include="CGameManager.cpp">
       <Filter>GameCore\GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameProp.cpp">
+      <Filter>GameCore\Prop</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayerProp.cpp">
+      <Filter>GameCore\Prop</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameEventManager.h">
+      <Filter>GameCore\GameManager\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="CBasePlayerInfo.cpp">
+      <Filter>GameCore\Player\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="CBasePlayerProperty.cpp">
+      <Filter>GameCore\Player\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="CBasePlayerManager.cpp">
+      <Filter>GameCore\Player\Base</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CMaple.h">
       <Filter>Common</Filter>
-    </ClInclude>
-    <ClInclude Include="CBasePlayer.h">
-      <Filter>GameCore\Player</Filter>
     </ClInclude>
     <ClInclude Include="CUnknow.h">
       <Filter>GameCore</Filter>
@@ -54,6 +72,24 @@
     </ClInclude>
     <ClInclude Include="CGameManager.h">
       <Filter>GameCore\GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameProp.h">
+      <Filter>GameCore\Prop</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayerProp.h">
+      <Filter>GameCore\Prop</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumGameEventAddress.h">
+      <Filter>GameCore\GameManager\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="CBasePlayerInfo.h">
+      <Filter>GameCore\Player\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="CBasePlayerProperty.h">
+      <Filter>GameCore\Player\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="CBasePlayerManager.h">
+      <Filter>GameCore\Player\Base</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
