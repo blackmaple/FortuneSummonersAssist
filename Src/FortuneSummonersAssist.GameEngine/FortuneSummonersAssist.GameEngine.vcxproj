@@ -30,6 +30,8 @@
     <ClInclude Include="CRolePlayer.h" />
     <ClInclude Include="CUnknow.h" />
     <ClInclude Include="EnumGameEventAddress.h" />
+    <ClInclude Include="EnumGamePropId.h" />
+    <ClInclude Include="EnumGamePropLocation.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="GameCall.txt" />

@@ -2,8 +2,10 @@
 #include "CMaple.h"
 namespace FortuneSummonersAssistGame
 {
-	enum EnumGamePropId:INT32
+	enum EnumGamePropLocation :INT8
 	{
-
+		Player = 0,
+		Warehouse = 1,
+		
 	};
 }

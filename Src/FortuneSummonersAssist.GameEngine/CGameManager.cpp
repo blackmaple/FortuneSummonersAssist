@@ -1,5 +1,4 @@
 #include "CGameManager.h"
-#include "CGameEventManager.h" 
 
 namespace FortuneSummonersAssistGame
 {
@@ -18,11 +17,10 @@ namespace FortuneSummonersAssistGame
 		return this->m_pRolePlayer[at];
 	}
 
-	BOOL CGameManager::SetPlayerProp(INT32 propId, INT32 def0, INT32 def1, INT32 def2, BOOL notSave )
+	BOOL CGameManager::SetPlayerProp( EnumGamePropId propId, PINT16 pOldPropNumber, INT16 wPropNumber, EnumGamePropLocation flag_Warehouse, BOOL notSave)
 	{
-		var p = CGameEventManager::GetSetPlayerPropEvent();
-		var ret = p(this, propId, def0, def1, def2, notSave);
+		var pFuc = CGameEventManager::GetSetPlayerPropEvent();
+		var ret = pFuc(this, propId, pOldPropNumber, wPropNumber, flag_Warehouse, notSave);
 		return ret;
-	 
 	}
 }

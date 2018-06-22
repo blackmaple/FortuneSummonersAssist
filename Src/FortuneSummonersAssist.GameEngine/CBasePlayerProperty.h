@@ -65,8 +65,16 @@ namespace FortuneSummonersAssistGame
 
 		UINT32 m_IsATK;//m_0xD4;
 
-		UINT32 m_CombatLV;//m_0xD8;
-		UINT32 m_MaxCombatLV; //m_0xDC;
+		union
+		{
+			UINT32 m_CombatLV;//m_0xD8;
+			UINT32 m_LV;//m_0xD8;
+		};
+		union
+		{
+			UINT32 m_MaxCombatLV; //m_0xDC;
+			UINT32 m_MaxLV; //m_0xDC;
+		};
 
 		UINT32 m_OverlordLV;//m_0xE0;
 		UINT32 m_0xE4;

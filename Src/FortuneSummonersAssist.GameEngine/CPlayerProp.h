@@ -11,7 +11,9 @@ namespace FortuneSummonersAssistGame
 	protected:
 		UINT32 m_PropId;//m_0x0;
 		UINT32 m_EquipPlayerId;//m_0x4
-		UINT32 m_PropNumber;//m_0x8;
+		UINT16 m_PropNumber;//m_0x8;
+		UINT8 m_0xA;
+		UINT8 m_0xB;
 		PGameProp m_pGameProp;//m_0xc;
 	};
 

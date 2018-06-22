@@ -35,7 +35,9 @@ namespace FortuneSummonersAssistGame
 		UINT32 m_0x58;
 		UINT32 m_0x5C;
 		UINT32 m_Price;//m_0x60;
-		UINT32 m_0x64;
+		UINT16 m_Number;//m0x64;
+		UINT16 m_0x66;
+
 		UINT32 m_0x68;
 		UINT32 m_0x6C;
 		UINT32 m_0x70;

@@ -10,3 +10,8 @@ mov ecx,[ecx+0x2784]
 mov eax,0041A240
 call eax
 
+mov ecx,[0x08F344C]
+mov ecx,[ecx+0x2784]
+mov ecx,[ecx+0x4030]
+mov eax,0x05894D0 
+call eax

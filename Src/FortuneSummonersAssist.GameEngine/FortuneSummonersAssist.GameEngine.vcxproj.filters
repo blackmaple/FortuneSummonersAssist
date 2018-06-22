@@ -20,11 +20,11 @@
     <Filter Include="GameCore\Prop">
       <UniqueIdentifier>{59442c56-67e0-46d9-b52d-8a57aa14d7cb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GameCore\GameManager\Event">
-      <UniqueIdentifier>{54f0aeed-9d3c-450e-8c42-83e4be0552fb}</UniqueIdentifier>
-    </Filter>
     <Filter Include="GameCore\Player\Base">
       <UniqueIdentifier>{c3328833-e030-4fee-8d1e-16a21c8068da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameCore\GameManager\GameRes">
+      <UniqueIdentifier>{54f0aeed-9d3c-450e-8c42-83e4be0552fb}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -48,7 +48,7 @@
       <Filter>GameCore\Prop</Filter>
     </ClCompile>
     <ClCompile Include="CGameEventManager.h">
-      <Filter>GameCore\GameManager\Event</Filter>
+      <Filter>GameCore\GameManager\GameRes</Filter>
     </ClCompile>
     <ClCompile Include="CBasePlayerInfo.cpp">
       <Filter>GameCore\Player\Base</Filter>
@@ -80,7 +80,7 @@
       <Filter>GameCore\Prop</Filter>
     </ClInclude>
     <ClInclude Include="EnumGameEventAddress.h">
-      <Filter>GameCore\GameManager\Event</Filter>
+      <Filter>GameCore\GameManager\GameRes</Filter>
     </ClInclude>
     <ClInclude Include="CBasePlayerInfo.h">
       <Filter>GameCore\Player\Base</Filter>
@@ -90,6 +90,12 @@
     </ClInclude>
     <ClInclude Include="CBasePlayerManager.h">
       <Filter>GameCore\Player\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumGamePropId.h">
+      <Filter>GameCore\GameManager\GameRes</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumGamePropLocation.h">
+      <Filter>GameCore\GameManager\GameRes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

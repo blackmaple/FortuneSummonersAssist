@@ -2,6 +2,8 @@
 #include "CMaple.h"
 #include "CRolePlayer.h"
 #include "CPlayerProp.h"
+#include "CGameEventManager.h" 
+
 namespace FortuneSummonersAssistGame
 {
 	class CGameManager
@@ -10,7 +12,7 @@ namespace FortuneSummonersAssistGame
 		CGameManager();
 		~CGameManager();
 		PRolePlayer GetRplePlayer(INT32 at)const;
-		BOOL SetPlayerProp(INT32 propId, INT32 def0 = 0, INT32 def1 = 0, INT32 def2 = 0, BOOL notSave = FALSE);
+		BOOL SetPlayerProp(__in EnumGamePropId propId, __out PINT16 pOldPropNumber, __in INT16 wPropNumber, __in EnumGamePropLocation flag_Warehouse, __in BOOL notSave);
 	protected:
 		UINT32 m_0x0;
 		void* m_0x4;
